@@ -1,0 +1,46 @@
+.container--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: max(1em, 18px);
+  color: #cec2eb;
+  background-color: #454145;
+}
+
+.header--wrapper {
+  text-align: center;
+}
+
+.section--wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+}
+
+.logo--app {
+  height: 240px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo--app {
+    animation: logo--app-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo--app-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card--env {
+  margin: 0.4vh;
+  filter: brightness(0.8);
+}

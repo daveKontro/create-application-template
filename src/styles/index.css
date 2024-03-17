@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'exo2-regular';
+  src: url('../fonts/Exo2-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'exo2-regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
