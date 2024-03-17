@@ -1,0 +1,14 @@
+button#counter {
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  color: #cec2eb;
+  background-color: #454145;
+  border: 1px solid #cec2eb;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+
+button#counter:hover {
+  border-radius: 20px;
+}
