@@ -2,6 +2,13 @@
 This project aims to provide a configured application template for you to build upon.  
 All configuration is fully visable and under your control to augment as you see fit.  
 
+## install
+```
+npm install -g create-application-template
+
+npx create-application-template --name={my-project}
+```
+
 ## tsconfig
 - focused on type checking; using babel for transpiling
 
