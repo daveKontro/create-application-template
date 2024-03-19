@@ -1,5 +1,3 @@
-<img src='./src/assets/cat.svg' style='height: 200px;'>
-
 # Create Application Template
 This project aims to provide a configured application template for you to build upon.  
 
