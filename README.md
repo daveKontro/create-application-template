@@ -63,9 +63,7 @@ console.log(process.env.PORT)
 ```
 
 ### `NODE_ENV` settings
-set to `production` for build  
-
-set to `develop` for dev server  
+automatically set to `production` for build; `develop` for dev server  
 
 ### `.env` variables
 add new environmental variables via the `.env` file in project  
