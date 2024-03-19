@@ -1,5 +1,5 @@
 import '../styles/app.css'
-import logo from '../assets/gear.svg'
+import logo from '../assets/cat.svg'
 import { Counter } from './Counter'
 
 export const App = () => {

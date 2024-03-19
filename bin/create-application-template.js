@@ -47,7 +47,6 @@ const run = async () => {
   if (packageJson.hasOwnProperty('author')) packageJson.author = ''
   if (packageJson.hasOwnProperty('bin')) delete packageJson.bin
   if (packageJson.hasOwnProperty('repository')) delete packageJson.repository
-  if (packageJson.dependencies.hasOwnProperty('chalk')) delete packageJson.dependencies.chalk
   if (packageJson.dependencies.hasOwnProperty('yargs')) delete packageJson.dependencies.yargs
 
   execCommand(`rm ${projectPaths.packageJson}`)
