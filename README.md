@@ -1,7 +1,7 @@
-<img src='./src/assets/cat.svg' style='height: 300px; display: block; margin-left: auto; margin-right: auto;'>
+<img src='./src/assets/cat.svg' style='height: 200px;'>
 
 # Create Application Template
-Create Application Template aims to provide a configured application template for you to build upon.  
+This project aims to provide a configured application template for you to build upon.  
 
 All configuration is fully visable and under your control to augment as you see fit.  
 
