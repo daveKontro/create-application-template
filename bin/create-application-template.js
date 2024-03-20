@@ -33,6 +33,7 @@ const run = async () => {
 
   const projectPaths = {
     root: `./${argv.name}`,
+    get bin() { return `${this.root}/bin` },
     get env() { return `${this.root}/.env` },
     get packageJson() { return `${this.root}/package.json` },
   }
@@ -50,6 +51,7 @@ const run = async () => {
   if (packageJson.dependencies.hasOwnProperty('yargs')) delete packageJson.dependencies.yargs
 
   execCommand(`rm ${projectPaths.packageJson}`)
+  execCommand(`rm -rf ${projectPaths.bin}`)
 
   try {
     await writeFile(projectPaths.packageJson, JSON.stringify(packageJson, null, 2), {
