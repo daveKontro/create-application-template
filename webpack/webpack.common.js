@@ -128,7 +128,7 @@ module.exports = (webpackEnv) => {
       new HtmlWebpackPlugin({
         template: paths.src.indexHtml,
         favicon: paths.src.assets.faviconIco,
-        title: 'Application Template',
+        title: 'CAT',
         ...(isProduction && {
           minify: {
             removeComments: true,
