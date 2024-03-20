@@ -5,7 +5,7 @@ All configuration is fully visable and under your control to augment as you see 
 
 The template is a typescript enabled React application with a test suite and code linting.  
 
-See the template running live here: https://createapplicationtemplate.onrender.com/.  
+See the template running live [here](https://createapplicationtemplate.onrender.com).  
 
 ## installation
 first install globally  
@@ -21,7 +21,7 @@ npx create-application-template --name={my-project}
 ## usage
 webpack is used for code bundling and the development server  
 
-run development server and test suite  
+run development server and test suite on http://localhost:3333 by default    
 ```
 npm run dev
 ```
@@ -48,12 +48,12 @@ npm run test
 ```
 
 ## code linting
-linting rules are in `.eslintrc.js`, install the ESLint pluggin if using vscode  
+linting rules are in `.eslintrc.js`; install the ESLint pluggin if using vscode  
 ```
 npm run lint
 ```
 
-css linting rules are in `.stylelintrc.js`, install the Stylelint pluggin if using vscode  
+css linting rules are in `.stylelintrc.js`; install the Stylelint pluggin if using vscode  
 ```
 npm run stylelint
 ```
