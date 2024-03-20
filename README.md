@@ -5,6 +5,8 @@ All configuration is fully visable and under your control to augment as you see 
 
 The template is a typescript enabled React application with a test suite and code linting.  
 
+See the template running live here: https://createapplicationtemplate.onrender.com/.  
+
 ## installation
 first install globally  
 ```

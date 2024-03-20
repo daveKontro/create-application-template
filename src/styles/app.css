@@ -51,3 +51,8 @@
   margin: 0.4vh;
   filter: brightness(0.8);
 }
+
+a {
+  color: #cec2eb;
+  opacity: 0.6;
+}
