@@ -1,3 +1,7 @@
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.version&label=version&labelColor=%23454145&color=%23cec2eb)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.engines.node&label=node&labelColor=%23454145&color=%23cec2eb)
+![Static Badge](https://img.shields.io/badge/npm-v10.2.4-%23cec2eb)
+
 # Create Application Template
 This project aims to provide a configured application template for you to build upon.  
 
@@ -5,7 +9,7 @@ All configuration is fully visable and under your control to augment as you see 
 
 The template is a typescript enabled React application with a test suite and code linting.  
 
-See the template running live [here](https://createapplicationtemplate.onrender.com).  
+See the template running live [here](https://www.createapplicationtemplate.com/).  
 
 ## installation
 first install globally  
