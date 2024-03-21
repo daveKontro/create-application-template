@@ -1,6 +1,6 @@
 {
   "name": "create-application-template",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "provides a configured application template for you to build upon",
   "main": "index.js",
   "bin": {
@@ -26,7 +26,8 @@
     "webpack",
     "jest",
     "eslint",
-    "styelint"
+    "styelint",
+    "javascript"
   ],
   "repository": {
     "type": "git",
