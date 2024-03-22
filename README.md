@@ -25,7 +25,7 @@ npx create-application-template --name={my-project}
 ## usage
 webpack is used for code bundling and the development server  
 
-run development server and test suite on http://localhost:3333 by default    
+run development server and test suite (on http://localhost:3333 by default)  
 ```
 npm run dev
 ```
