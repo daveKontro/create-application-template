@@ -72,9 +72,9 @@ console.log(process.env.PORT)
 automatically set to `production` for build; `develop` for dev server  
 
 ### `.env` variables
-add new environmental variables via the `.env` file in project  
+add new or alter existing environmental variables via the `.env` file  
 
-the following variables exist in the current configuration and can be altered  
+the following variables exist in the default configuration and can be altered  
 
 #### develop (dev server)
 ```
