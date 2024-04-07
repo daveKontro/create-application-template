@@ -1,6 +1,6 @@
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.version&label=version&labelColor=%23454145&color=%23cec2eb)
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.engines.node&label=node&labelColor=%23454145&color=%23cec2eb)
-![Static Badge](https://img.shields.io/badge/npm-v10.2.4-%2323cec2eb?logoColor=%23454145)
+![Static Badge](https://img.shields.io/badge/npm-v10.2.4-%23cec2eb?labelColor=%23454145)
 
 # Create Application Template
 This project aims to provide a configured application template for you to build upon.  
