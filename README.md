@@ -36,12 +36,12 @@ npm run build
 ```
 
 ## tsconfig
-focused on type checking; using babel for transpiling  
+focused on type checking; babel is used for transpiling  
 
 ## pre-commit
-scripts in `.husky/pre-commit` are run to check commits  
+scripts in `.husky/pre-commit` are run on commits for quality control  
 
-add or remove scripts as you see fit  
+add or remove scripts you'd like run before code is commited  
 
 ## test suite
 to create a test follow this file naming format: `*.{spec,test}.{ts,tsx}`  
