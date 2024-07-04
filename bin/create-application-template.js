@@ -23,16 +23,9 @@ const run = async () => {
   // consume arguments
   const argv = yargs(hideBin(process.argv)).argv
 
-  const isNameDotCommand = (argv.name === '.')
-  const projectName = isNameDotCommand ? path.basename(process.cwd()) : argv.name
-
   if (!argv.name) {
     console.error('WARNING add a project name like so: npx create-application-template --name={my-project}')
     process.exit(1)
-  } else {
-    console.info('')
-    console.info(`Your project name is: ${projectName}`)
-    console.info('')
   }
 
   const projectPaths = {
@@ -41,6 +34,13 @@ const run = async () => {
     get env() { return `${this.root}/.env` },
     get packageJson() { return `${this.root}/package.json` },
   }
+
+  const isNameDotCommand = (argv.name === '.')
+  const projectName = isNameDotCommand ? path.basename(process.cwd()) : argv.name
+
+  console.info('')
+  console.info(`Your project name is: ${projectName}`)
+  console.info('')
 
   // create project
   execCommand(`curl -L ${repo} | tar zx --one-top-level=${argv.name} --strip-components 1`)
