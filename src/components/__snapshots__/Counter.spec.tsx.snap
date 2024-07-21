@@ -1,4 +1,7 @@
-button#counter {
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styled with palette colors 1`] = `
+.c0 {
   height: 40px;
   padding: 10px;
   font-size: 18px;
@@ -9,6 +12,14 @@ button#counter {
   transition-duration: 0.5s;
 }
 
-button#counter:hover {
+.c0:hover {
   border-radius: 20px;
 }
+
+<button
+  class="c0"
+>
+  count: 
+  0
+</button>
+`;

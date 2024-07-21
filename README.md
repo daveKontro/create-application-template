@@ -62,6 +62,19 @@ css linting rules are in `.stylelintrc.js`; install the Stylelint pluggin if usi
 npm run stylelint
 ```
 
+## styles
+styling is done using the style-components module, but straight CSS is supported
+
+after instillation it is recommended to proceed using styled-components or CSS, but not both
+
+if you proceed with styled-components: 
+  - remove the single `.css` example in `/src/styles/`
+  - that's it!
+
+if you prefer CSS: 
+  - alter `.stylintrc.js` and `.husky/pre-commint` per the files' notes
+  - remove `.ts` files from `/src/styles/` or "recreate" them in `.css`
+
 ## environmental settings
 access environmental variables in code like so  
 ```

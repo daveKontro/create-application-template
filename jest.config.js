@@ -36,6 +36,7 @@ module.exports = async () => {
       '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': 'babel-jest',
       '^.+\\.css$': '<rootDir>/jest/cssTransform.js',
       '^.+\\.svg$': '<rootDir>/jest/svgTransform.js',
+      '^.+\\.woff2$': '<rootDir>/jest/fontTransform.js',
     },
     // transformIgnorePatterns: [
     //   '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$',
