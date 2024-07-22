@@ -17,5 +17,11 @@
       },
       "react-refresh/babel"
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      // to mock webpack's require.context in jest
+      "plugins": ["transform-require-context"]
+    }
+  }
 }
