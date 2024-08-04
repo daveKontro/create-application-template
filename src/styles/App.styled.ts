@@ -11,11 +11,11 @@ export const StyledContainer = styled.div(({ theme }) => `
   background-color: ${theme.colors.palette.background};
 `)
 
-export const StyledHeader = styled.header `
+export const StyledHeader = styled.header`
   text-align: center;
 `
 
-export const StyledSection = styled.section `
+export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   margin: 2vh;
