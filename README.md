@@ -1,6 +1,6 @@
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.version&label=version&labelColor=%23454145&color=%23cec2eb)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.engines.node&label=node&labelColor=%23454145&color=%23cec2eb)
-![Static Badge](https://img.shields.io/badge/npm-v10.2.4-%23cec2eb?labelColor=%23454145)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.version&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAEnRFWHRfcV9pY29PcmlnRGVwdGgAMzLV4rjsAAABRUlEQVQ4jcWSP0tCYRyFz++9gV3KCEoroxZxSiLEoCT7MwUGrQ1tfoD28AMEFTQ1F40OOWVLcPMSDqENrU0SBHUpQrA/cr2nQTEwSm8QnfGF5znnhR/w35HWh0LuYUsoYZara9HV0RcAMAyjy6uFjwi+Tc/7k98Krs4fZym1CxFRNfJYHJUCAApTSrgOAEKsRBb9p18E+fyt7rH1MwFjP24mrquV5/hMIlQGAAUA6XRa67b1TFu4Xjnp6e0/yWZvPE1BcHhpA+ByW7g5AnNDPX2bjS9QiqZVEshYpwIAoEOrTF9ACqY1ooA7N/Bn1IT6HViPbVdFAKCYuy+JqHFXNPHkrQwG6gtE23HbLsLdUELeFQBE4gP74mCPJDuBa5CDqbhvG2i9RMOKQkOSDmJQCILUG3WvdFDSlFySzmFkwW+6Xfx3+QCAd27zrNWLdgAAAABJRU5ErkJggg==&label=version&labelColor=%23454145&color=%23cec2eb)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.engines.node&logo=nodedotjs&label=node&labelColor=%23454145&color=%23cec2eb)
+![Static Badge](https://img.shields.io/badge/npm-v10.2.4-%23cec2eb?logo=npm&labelColor=%23454145)
 
 # Create Application Template
 This project aims to provide a configured application template for you to build upon.  
