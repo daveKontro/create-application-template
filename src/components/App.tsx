@@ -8,8 +8,8 @@ import '../styles/env.css'
 import cat from '../assets/cat.svg'
 import { Counter } from './Counter'
 
-export const App: FC = (): JSX.Element => {
-  const TemplateLink: FC = (): JSX.Element => {
+export const App: FC = () => {
+  const TemplateLink: FC = () => {
     return (
       <app.StyledLink
         href='https://www.npmjs.com/package/create-application-template'
