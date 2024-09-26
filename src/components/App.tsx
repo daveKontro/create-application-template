@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from '../styles/Global'
 import theme from '../styles/theme'
@@ -7,7 +8,19 @@ import '../styles/env.css'
 import cat from '../assets/cat.svg'
 import { Counter } from './Counter'
 
-export const App = () => {
+export const App: FC = (): JSX.Element => {
+  const TemplateLink: FC = (): JSX.Element => {
+    return (
+      <app.StyledLink
+        href='https://www.npmjs.com/package/create-application-template'
+        rel='noreferrer'
+        target='_blank'
+      >
+        here
+      </app.StyledLink>
+    )
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -15,7 +28,7 @@ export const App = () => {
         <app.StyledHeader>
           <h1>Create Application Template</h1>
           <h2>Configured and under your control!</h2>
-          <h2>Access the template <app.StyledLink href='https://www.npmjs.com/package/create-application-template' rel='noreferrer' target='_blank'>here</app.StyledLink>...</h2>
+          <h2>Access the template <TemplateLink />...</h2>
         </app.StyledHeader>
         <app.StyledSection>
           <code className='card--env'>[NODE_ENV={process.env.NODE_ENV}]</code>
