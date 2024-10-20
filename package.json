@@ -1,6 +1,6 @@
 {
   "name": "create-application-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "provides a configured application template for you to build upon",
   "main": "index.js",
   "bin": {
