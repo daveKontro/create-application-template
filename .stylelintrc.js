@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-recess-order',
+    'stylelint-no-unsupported-browser-features',
   ],
   // NOTE remove customSyntax and use "npm stylelint:css"
   // if you wish to use .css (see README.md "styles")
