@@ -25,6 +25,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:eslint-comments/recommended',
+    'plugin:eslint-plugin-compat/recommended',
   ],
   rules: {
     // 📜 @typescript-eslint
