@@ -1,6 +1,6 @@
 {
   "name": "create-application-template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "provides a configured application template for you to build upon",
   "main": "index.js",
   "bin": {
@@ -12,6 +12,7 @@
     "build:profile": "webpack --config webpack/webpack.config.js --env BUNDLER_ENV=prod BUNDLER_WITH_PROFILING=true",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:updateSnapshot": "jest --updateSnapshot",
     "dev": "concurrently \"npm run test:watch\" \"npm run start\"",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx,json}\"",
