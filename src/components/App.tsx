@@ -5,7 +5,7 @@ import theme from '../styles/theme'
 import * as app from '../styles/App.styled'
 import { StyledLogo } from '../styles/Logo.styled'
 import '../styles/env.css'
-import cat from '../assets/cat.svg'
+import logo from '../assets/logo.svg'
 import { Counter } from './Counter'
 
 export const App: FC = () => {
@@ -35,7 +35,7 @@ export const App: FC = () => {
           <code className='card--env'>[EXAMPLE={process.env.EXAMPLE}]</code>
         </app.StyledSection>
         <app.StyledSection>
-          <StyledLogo src={cat} alt='logo'/>
+          <StyledLogo src={logo} alt='logo'/>
         </app.StyledSection>
         <app.StyledSection>
           <Counter />
