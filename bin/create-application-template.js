@@ -139,6 +139,11 @@ const run = async () => {
   // install project dependencies
   execCommand(`npm --prefix ${projectPaths.root} install`)
 
+  // run scripts
+  if (argv.ccrate) {
+    execCommand(`npm --prefix ${projectPaths.root} run test:updateSnapshot`)
+  }
+
   // finish up
   console.info('')
   console.info('Thanks for using Create Application Template!')
