@@ -12,7 +12,7 @@ export const App: FC = () => {
   const TemplateLink: FC = () => {
     return (
       <app.StyledLink
-        href='https://www.npmjs.com/package/create-application-template'
+        href='https://www.npmjs.com/package/create-containerized-app-template'
         rel='noreferrer'
         target='_blank'
       >
