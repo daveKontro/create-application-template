@@ -1,3 +1,5 @@
+import { transparentize } from 'polished'
+
 const theme = {
   font: 'exo2',
   colors: {
@@ -5,7 +7,14 @@ const theme = {
       background: '#454145',
       primary: '#cec2eb',
     },
-    get link() { return this.palette.primary },
+    get link() {
+      const link = this.palette.primary
+
+      return {
+        regular: transparentize(0.4, link),
+        hover: transparentize(0.6, link),
+      }
+    },
   },
 }
 

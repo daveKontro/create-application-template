@@ -22,6 +22,10 @@ export const StyledSection = styled.section`
 `
 
 export const StyledLink = styled.a(({ theme }) => `
-  color: ${theme.colors.palette.primary};
-  opacity: 0.6;
+  color: ${theme.colors.link.regular};
+  transition: 0.3s;
+
+  &:hover {
+    color: ${theme.colors.link.hover};
+  }
 `)
