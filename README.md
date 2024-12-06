@@ -72,7 +72,7 @@ if you proceed with styled-components:
   - that's it!
 
 if you prefer CSS: 
-  - alter `.stylintrc.js` and `.husky/pre-commint` per the files' notes
+  - alter `.stylintrc.js` and `.husky/pre-commit` per the files' notes
   - remove `.ts` files from `/src/styles/` or "recreate" them in `.css`
 
 ## environmental settings
