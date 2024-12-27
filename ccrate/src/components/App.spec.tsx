@@ -1,10 +1,24 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, act } from '@testing-library/react'
 import 'jest-styled-components'
 import { App } from './App'
+
+jest.useFakeTimers()
 
 test('renders title', () => {
   render(<App />)
 
+  const text = 'Create Containerized App Template'
+
+  for (let i = 1; i <= text.length; i++) {
+    act(() => {
+      jest.advanceTimersByTime(50)
+    })
+  }
+
   expect(screen).toMatchSnapshot()
-  expect(screen.getByText(/create containerized app template/i)).toBeInTheDocument()
+  expect(screen.getByText(text)).toBeInTheDocument()
+})
+
+afterEach(() => {
+  jest.useRealTimers()
 })
