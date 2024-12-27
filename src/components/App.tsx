@@ -7,6 +7,7 @@ import { StyledLogo } from '../styles/Logo.styled'
 import '../styles/env.css'
 import logo from '../assets/logo.svg'
 import { Counter } from './Counter'
+import { Typewriter } from './Typewriter'
 
 export const App: FC = () => {
   const TemplateLink: FC = () => {
@@ -26,9 +27,28 @@ export const App: FC = () => {
       <GlobalStyles />
       <app.StyledContainer>
         <app.StyledHeader>
-          <h1>Create Application Template</h1>
-          <h2>Configured and under your control!</h2>
-          <h2>Access the template <TemplateLink />...</h2>
+          <h1>
+            <Typewriter
+              text={'Create Application Template'}
+              speed={50}
+            />
+          </h1>
+          <h2>
+            <Typewriter
+              text={'Configured and under your control!'}
+              speed={50}
+              delay={300}
+            />
+          </h2>
+          <h2>
+            <Typewriter
+              text={'Access the template'}
+              speed={50}
+              delay={1300}
+            >
+              <TemplateLink />
+            </Typewriter>
+          </h2>
         </app.StyledHeader>
         <app.StyledSection>
           <code className='card--env'>[NODE_ENV={process.env.NODE_ENV}]</code>

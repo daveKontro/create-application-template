@@ -1,6 +1,6 @@
 import { styled, keyframes } from 'styled-components'
 
-const logoAnimation = keyframes`
+const pulse = keyframes`
   from {
     transform: rotate(15deg);
   }
@@ -16,6 +16,6 @@ export const StyledLogo = styled.img`
   transform-origin: top;
 
   @media (prefers-reduced-motion: no-preference) {
-    animation: ${logoAnimation} 3.5s ease-in-out infinite alternate-reverse;
+    animation: ${pulse} 3.5s ease-in-out infinite alternate-reverse;
   }
 `

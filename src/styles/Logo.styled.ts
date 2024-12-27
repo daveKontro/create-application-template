@@ -1,6 +1,6 @@
 import { styled, keyframes } from 'styled-components'
 
-const logoAnimation = keyframes`
+const pulse = keyframes`
   0% {
     opacity: 0.2;
     transform: scale(0.8);
@@ -20,8 +20,5 @@ const logoAnimation = keyframes`
 export const StyledLogo = styled.img`
   height: 240px;
   pointer-events: none;
-
-  @media (prefers-reduced-motion: no-preference) {
-    animation: ${logoAnimation} infinite 10s ease;
-  }
+  animation: ${pulse} infinite 10s ease;
 `

@@ -7,6 +7,7 @@ import { StyledLogo } from '../styles/Logo.styled'
 import '../styles/env.css'
 import logo from '../assets/logo.svg'
 import { Counter } from './Counter'
+import { Typewriter } from './Typewriter'
 
 export const App: FC = () => {
   const TemplateLink: FC = () => {
@@ -26,9 +27,28 @@ export const App: FC = () => {
       <GlobalStyles />
       <app.StyledContainer>
         <app.StyledHeader>
-          <h1>Create Containerized App Template</h1>
-          <h2>An app template containerized via Docker!</h2>
-          <h2>Access the CCrATe template <TemplateLink />...</h2>
+          <h1>
+            <Typewriter
+              text={'Create Containerized App Template'}
+              speed={50}
+            />
+          </h1>
+          <h2>
+            <Typewriter
+              text={'An app template containerized via Docker!'}
+              speed={50}
+              delay={300}
+            />
+          </h2>
+          <h2>
+            <Typewriter
+              text={'Access the CCrATe template'}
+              speed={50}
+              delay={1300}
+            >
+              <TemplateLink />
+            </Typewriter>
+          </h2>
         </app.StyledHeader>
         <app.StyledSection>
           <code className='card--env'>[NODE_ENV={process.env.NODE_ENV}]</code>
