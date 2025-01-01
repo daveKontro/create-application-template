@@ -16,6 +16,7 @@ module.exports = {
     'keyframes-name-pattern': null,
     'comment-empty-line-before': 'never',
     'declaration-empty-line-before': 'never',
+    'media-feature-range-notation': 'prefix',
     'value-keyword-case': [
       'lower',
       {

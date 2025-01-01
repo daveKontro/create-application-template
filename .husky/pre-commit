@@ -1,5 +1,5 @@
-npm run lint:fix
-npm run stylelint:fix
+npm run lint
+npm run stylelint
 # use below if you wish to use .css (see README.md "styles")
-# npm run stylelint:css:fix
+# npm run stylelint:css
 npm run test
