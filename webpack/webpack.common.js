@@ -91,7 +91,7 @@ module.exports = (webpackEnv) => {
           type: 'asset/resource',
         },
         {
-          test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+          test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
           type: 'asset',
           parser: {
             dataUrlCondition: {
