@@ -5,6 +5,7 @@ import {
   ReactElement,
   PropsWithChildren,
 } from 'react'
+import { StyledText } from '../styles/Typewriter.styled'
 
 export const Typewriter: FC<
   PropsWithChildren<{
@@ -41,12 +42,12 @@ export const Typewriter: FC<
   ])
 
   return (
-    <>
+    <StyledText>
       {displayedText}
       {
         (currentIndex === text.length && children) &&
           <>&nbsp;{children}</>
       }
-    </>
+    </StyledText>
   )
 }
