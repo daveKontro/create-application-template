@@ -1,6 +1,6 @@
 {
   "name": "create-application-template",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "provides a configured application template for you to build upon",
   "main": "index.js",
   "bin": {
@@ -41,7 +41,8 @@
   "license": "MIT",
   "proxy": "http://localhost:3000",
   "engines": {
-    "node": ">=20.18.3"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "dependencies": {
     "browserslist": "4.24.4",
