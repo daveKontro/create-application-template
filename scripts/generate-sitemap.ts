@@ -7,7 +7,7 @@ const sitemapPath = path.resolve(__dirname, '../src/public/sitemap.xml')
 const baseUrl = packageJson.url || 'https://www.createapplicationtemplate.com/'
 
 if (existsSync(sitemapPath)) {
-  console.log('📝 overwriting existing sitemap.xml')
+  console.info('📝 overwriting existing sitemap.xml')
 }
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
