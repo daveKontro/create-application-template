@@ -23,7 +23,16 @@ export const Typewriter: FC<
   const [displayedText, setDisplayedText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  useEffect(() => {
+  // NOTE: supports hot reload behavior in development:
+  // A) when the `text` prop changes (e.g. via hot reload), reset internal state
+  // B) this triggers the typing animation effect to restart with the new text
+
+  useEffect(() => {  // A
+    setDisplayedText('')
+    setCurrentIndex(0)
+  }, [text])
+
+  useEffect(() => {  // B
     const mySpeed = (currentIndex === 0) ? delay + speed : speed
 
     if (currentIndex < text.length) {
