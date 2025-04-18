@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const WebpackShellPluginNext =require('webpack-shell-plugin-next')
 const getPaths = require('./utilities/getPaths')
 const getTerserOptions = require('./utilities/getTerserOptions')
 
@@ -28,6 +29,13 @@ module.exports = (webpackEnv) => {
       new MiniCssExtractPlugin({
         filename: paths.static.css.filenameCss,
         chunkFilename: paths.static.css.chunkFilenameCss,
+      }),
+      new WebpackShellPluginNext({
+        onBuildStart: {
+          scripts: ['ts-node scripts/generate-sitemap.ts'],
+          blocking: true,
+          parallel: false,
+        },
       }),
     ],
   }

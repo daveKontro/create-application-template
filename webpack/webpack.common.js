@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const WebpackShellPluginNext =require('webpack-shell-plugin-next')
 const env = require('./utilities/env')
 const getPaths = require('./utilities/getPaths')
 const createEnvironmentHash = require('./utilities/createEnvironmentHash')
@@ -157,13 +156,6 @@ module.exports = (webpackEnv) => {
         }],
       }),
       new Dotenv(),
-      new WebpackShellPluginNext({
-        onBuildStart: {
-          scripts: ['ts-node scripts/generate-sitemap.ts'],
-          blocking: true,
-          parallel: false,
-        },
-      }),
     ],
   }
 }
