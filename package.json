@@ -1,6 +1,6 @@
 {
   "name": "create-application-template",
-  "version": "2.2.6",
+  "version": "2.3.0",
   "description": "provides a configured application template for you to build upon",
   "main": "index.js",
   "bin": {
@@ -19,8 +19,7 @@
     "stylelint": "npx stylelint \"src/styles/**/*.{js,ts}\"",
     "stylelint:fix": "npx stylelint --fix \"src/styles/**/*.{js,ts}\"",
     "stylelint:css": "npx stylelint \"src/**/*.css\"",
-    "stylelint:css:fix": "npx stylelint --fix \"src/**/*.css\"",
-    "prepare": "husky"
+    "stylelint:css:fix": "npx stylelint --fix \"src/**/*.css\""
   },
   "keywords": [
     "template",
