@@ -9,19 +9,19 @@ import logo from '../assets/logo.svg'
 import { Counter } from './Counter'
 import { Typewriter } from './Typewriter'
 
-export const App: FC = () => {
-  const TemplateLink: FC = () => {
-    return (
-      <app.StyledLink
-        href='https://www.npmjs.com/package/create-application-template'
-        rel='noreferrer'
-        target='_blank'
-      >
-        here
-      </app.StyledLink>
-    )
-  }
+const TemplateLink: FC = () => {
+  return (
+    <app.StyledLink
+      href='https://www.npmjs.com/package/create-application-template'
+      rel='noreferrer'
+      target='_blank'
+    >
+      here
+    </app.StyledLink>
+  )
+}
 
+export const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

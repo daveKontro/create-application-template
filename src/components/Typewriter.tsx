@@ -28,8 +28,12 @@ export const Typewriter: FC<
   // B) this triggers the typing animation effect to restart with the new text
 
   useEffect(() => {  // A
-    setDisplayedText('')
-    setCurrentIndex(0)
+    const timeoutIdInit = setTimeout(() => {
+      setDisplayedText('')
+      setCurrentIndex(0)
+    }, 0)
+
+    return () => clearTimeout(timeoutIdInit)
   }, [text])
 
   useEffect(() => {  // B
