@@ -14,13 +14,24 @@ See the template running live [here](https://www.createapplicationtemplate.com/)
 ## installation
 first install globally  
 ```
-npm install -g create-application-template
+npm install -g create-application-template@latest
+```
+_or_
+```
+npm install -g create-application-template@beta
 ```
 
 then create your project  
 ```
 npx create-application-template --name={my-project}
 ```
+
+## new on BETA version 🚀
+beta upgrades to React 19 with [React Compiler](https://react.dev/learn/react-compiler/introduction) opt-in
+
+this version takes advantage of the React Compiler's automatic optimization
+
+it also includes the React Compiler's ESLint integretion
 
 ## usage
 webpack is used for code bundling and the development server  
