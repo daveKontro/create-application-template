@@ -10,6 +10,20 @@ expect.extend(matchers)
 require('@testing-library/jest-dom')
 // require('@testing-library/jest-dom/jest-globals')
 
+// mock web worker
+global.Worker = class {
+  constructor(stringUrl) {
+    this.url = stringUrl
+  }
+  postMessage() {}
+  terminate() {}
+  addEventListener() {}
+  removeEventListener() {}
+}
+
+global.URL.createObjectURL = () => 'mockObjectURL'
+
+// reset timers after each test
 afterEach(() => {
   jest.useRealTimers()
 })
