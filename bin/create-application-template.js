@@ -7,7 +7,7 @@ const { hideBin } = require('yargs/helpers')
 const packageJson = require('../package.json')
 
 const run = async () => {
-  const repo = 'https://github.com/daveKontro/create-application-template/tarball/main'
+  const repo = 'https://github.com/daveKontro/create-application-template/tarball/beta'
 
   const execCommand = (command) => {
     try {
