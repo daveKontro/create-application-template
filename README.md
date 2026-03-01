@@ -2,6 +2,8 @@
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FdaveKontro%2Fcreate-application-template%2Fmain%2Fpackage.json&query=%24.engines.node&logo=nodedotjs&label=node&labelColor=%23454145&color=%23cec2eb)
 ![Static Badge](https://img.shields.io/badge/npm->=v10-%23cec2eb?logo=npm&labelColor=%23454145)
 
+> This package has moved to @epic-effx/create-application-template. Please install @epic-effx/create-application-template instead.
+
 # Create Application Template
 This project aims to provide a configured application template for you to build upon.  
 
@@ -125,5 +127,3 @@ you can remove them in the future by:
   2. removing the `overrides` section
   3. reinstalling dependencies
   4. running `npm audit`
-
-
