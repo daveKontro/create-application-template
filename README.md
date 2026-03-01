@@ -26,7 +26,7 @@ then create your project
 npx create-application-template --name={my-project}
 ```
 
-## newest feature 🚀
+## newest features 🚀
 React 19 with [React Compiler](https://react.dev/learn/react-compiler/introduction) opt-in
 
 this version takes advantage of the React Compiler's automatic optimization
@@ -115,9 +115,12 @@ INLINE_SIZE_LIMIT={default is 10000}
 
 ## dependency overrides
 
-- this version includes minimal npm `overrides` to patch known transitive vulnerabilities in webpack tooling
-- they are intentionally limited to patch-level upgrades within the same major
-- you can remove them in the future by:
+this version includes minimal npm `overrides` to patch known transitive vulnerabilities in webpack tooling
+
+they are intentionally limited to patch-level upgrades within the same major
+
+you can remove them in the future by:
+
   1. running `npm update`
   2. removing the `overrides` section
   3. reinstalling dependencies
