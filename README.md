@@ -89,7 +89,7 @@ access environmental variables in code like so
 console.log(process.env.PORT)
 ```
 
-### `NODE_ENV` settings
+### build settings
 
 `NODE_ENV` and `BABEL_ENV` are explicitly set in the npm scripts using `cross-env`
 
