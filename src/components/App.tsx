@@ -12,7 +12,7 @@ import { Typewriter } from './Typewriter'
 const TemplateLink: FC = () => {
   return (
     <app.StyledLink
-      href='https://www.npmjs.com/package/create-application-template'
+      href='https://www.npmjs.com/package/@epic-effx/create-application-template'
       rel='noreferrer'
       target='_blank'
     >
