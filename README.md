@@ -83,16 +83,28 @@ if you prefer CSS:
   - remove `.ts` files from `/src/styles/` or "recreate" them in `.css`
 
 ## environmental settings
+
 access environmental variables in code like so  
-```
+```js
 console.log(process.env.PORT)
 ```
 
 ### `NODE_ENV` settings
-automatically set to `production` for build; `develop` for dev server  
+
+`NODE_ENV` and `BABEL_ENV` are explicitly set in the npm scripts using `cross-env`
+
+- `development` when running the dev server  
+- `production` when running the build  
+
+these variables control build tool behavior (e.g. enabling or disabling development-only Babel plugins like React Fast Refresh) \
+
+they are set in the scripts to guarantee consistent, production-safe builds across local, CI, and hosting environments
 
 ### `.env` variables
+
 add new or alter existing environmental variables via the `.env` file  
+
+`.env` is intended for application runtime configuration - not build tool configuration
 
 the following variables exist in the default configuration and can be altered  
 
