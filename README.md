@@ -14,16 +14,12 @@ See the template running live [here](https://www.createapplicationtemplate.com/)
 ## installation
 first install globally  
 ```
-npm install -g create-application-template@latest
-```
-_or_
-```
-npm install -g create-application-template@beta
+npm install -g @epic-effx/create-application-template@latest
 ```
 
 then create your project  
 ```
-npx create-application-template --name={my-project}
+npx @epic-effx/create-application-template --name={my-project}
 ```
 
 ## newest features 🚀
