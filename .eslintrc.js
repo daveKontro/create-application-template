@@ -212,6 +212,10 @@ module.exports = {
       },
     ],
     'jsx-quotes': ['error', 'prefer-single'],
+    'comma-spacing': ['error', {
+      before: false,
+      after: true,
+    }],
 
     // 📜 import
     'import/first': 'error',

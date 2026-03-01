@@ -5,7 +5,7 @@
 # Create Application Template
 This project aims to provide a configured application template for you to build upon.  
 
-All configuration is fully visable and under your control to augment as you see fit.  
+All configuration is fully visible and under your control to augment as you see fit.  
 
 The template is a typescript enabled React application with a test suite and code linting.  
 
@@ -26,12 +26,12 @@ then create your project
 npx create-application-template --name={my-project}
 ```
 
-## new on BETA version 🚀
-beta upgrades to React 19 with [React Compiler](https://react.dev/learn/react-compiler/introduction) opt-in
+## newest feature 🚀
+React 19 with [React Compiler](https://react.dev/learn/react-compiler/introduction) opt-in
 
 this version takes advantage of the React Compiler's automatic optimization
 
-it also includes the React Compiler's ESLint integretion
+it also includes the React Compiler's ESLint integration
 
 ## usage
 webpack is used for code bundling and the development server  
@@ -52,7 +52,7 @@ focused on type checking; babel is used for transpiling
 ## pre-commit
 scripts in `.husky/pre-commit` are run on commits for quality control  
 
-add or remove scripts you'd like run before code is commited  
+add or remove scripts you'd like run before code is committed  
 
 ## test suite
 to create a test follow this file naming format: `*.{spec,test}.{ts,tsx}`  
@@ -63,12 +63,12 @@ npm run test
 ```
 
 ## code linting
-linting rules are in `.eslintrc.js`; install the ESLint pluggin if using vscode  
+linting rules are in `.eslintrc.js`; install the ESLint plugin if using vscode  
 ```
 npm run lint
 ```
 
-css linting rules are in `.stylelintrc.js`; install the Stylelint pluggin if using vscode  
+css linting rules are in `.stylelintrc.js`; install the Stylelint plugin if using vscode  
 ```
 npm run stylelint
 ```
@@ -83,7 +83,7 @@ if you proceed with styled-components:
   - that's it!
 
 if you prefer CSS: 
-  - alter `.stylintrc.js` and `.husky/pre-commit` per the files' notes
+  - alter `.stylelintrc.js` and `.husky/pre-commit` per the files' notes
   - remove `.ts` files from `/src/styles/` or "recreate" them in `.css`
 
 ## environmental settings
@@ -112,3 +112,15 @@ INLINE_SIZE_LIMIT={default is 10000}
 # optional
 INLINE_SIZE_LIMIT={default is 10000}
 ```
+
+## dependency overrides
+
+- this version includes minimal npm `overrides` to patch known transitive vulnerabilities in webpack tooling
+- they are intentionally limited to patch-level upgrades within the same major
+- you can remove them in the future by:
+  1. running `npm update`
+  2. removing the `overrides` section
+  3. reinstalling dependencies
+  4. running `npm audit`
+
+
