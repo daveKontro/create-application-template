@@ -11,6 +11,8 @@ The template is a typescript enabled React application with a test suite and cod
 
 See the template running live [here](https://www.createapplicationtemplate.com/).  
 
+NOTE this is a continuation of the long running project [create-application-template](https://www.npmjs.com/package/create-application-template)  
+
 ## installation
 first install globally  
 ```
@@ -96,7 +98,7 @@ console.log(process.env.PORT)
 - `development` when running the dev server  
 - `production` when running the build  
 
-these variables control build tool behavior (e.g. enabling or disabling development-only Babel plugins like React Fast Refresh) \
+these variables set the OS env as early as possible and control build tool behavior e.g. enabling or disabling development-only Babel plugins like React Fast Refresh
 
 they are set in the scripts to guarantee consistent, production-safe builds across local, CI, and hosting environments
 
