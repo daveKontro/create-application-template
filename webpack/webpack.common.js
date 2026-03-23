@@ -41,7 +41,7 @@ module.exports = (webpackEnv) => {
   return {
     entry: paths.src.indexTsx,
     resolve: {
-      // can now leave off extentions when importing
+      // can now leave off extensions when importing
       extensions: ['.tsx', '.jsx', '.ts', '.js'],
     },
     watchOptions: {

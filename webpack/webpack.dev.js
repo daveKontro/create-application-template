@@ -30,7 +30,7 @@ module.exports = () => {
       }),
       // NOTE per the docs added "react-refresh/babel" (r-r/b) to
       // .babelrc and babel-loader, but seems to work without r-r/b...
-      // docs also used to say use webpack.HotModuleRepalcementPlugin,
+      // docs also used to say use webpack.HotModuleReplacementPlugin,
       // which also seemed to be unneeded, and now they don't...
       // so be on the lookout for doc changes related to r-r/b too
       new ReactRefreshWebpackPlugin(),
