@@ -81,8 +81,7 @@ const run = async () => {
 
       return {
         src: { ...paths },
-        ccrate: { ...getCcratePaths({ ...paths }),
-        },
+        ccrate: { ...getCcratePaths({ ...paths }) },
       }
     },
   }

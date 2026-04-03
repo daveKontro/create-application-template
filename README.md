@@ -24,13 +24,6 @@ then create your project
 npx @epic-effx/create-application-template --name={my-project}
 ```
 
-## newest features 🚀
-React 19 with [React Compiler](https://react.dev/learn/react-compiler/introduction) opt-in
-
-this version takes advantage of the React Compiler's automatic optimization
-
-it also includes the React Compiler's ESLint integration
-
 ## usage
 webpack is used for code bundling and the development server  
 
@@ -43,6 +36,13 @@ build static bundle
 ```
 npm run build
 ```
+
+## compiler 🚀
+this project uses React 19 with [React Compiler](https://react.dev/learn/react-compiler/introduction) opt-in
+
+it takes advantage of the React Compiler's automatic optimization
+
+React Compiler's ESLint integration is also included via `eslint-plugin-react-hooks`
 
 ## tsconfig
 focused on type checking; babel is used for transpiling  
@@ -93,7 +93,7 @@ console.log(process.env.PORT)
 
 ### build settings
 
-`NODE_ENV` and `BABEL_ENV` are explicitly set in the npm scripts using `cross-env`
+some environmental setting are explicitly set in the npm scripts using `cross-env`
 
 - `development` when running the dev server  
 - `production` when running the build  
