@@ -47,10 +47,12 @@ React Compiler's ESLint integration is also included via `eslint-plugin-react-ho
 ## tsconfig
 focused on type checking; babel is used for transpiling  
 
-## pre-commit
+## git hooks
 scripts in `.husky/pre-commit` are run on commits for quality control  
 
-add or remove scripts you'd like run before code is committed  
+run `npm prepare` to enable husky and use the provided pre-commit file  
+
+warning: running `npx husky init` will re-initiate husky and overwrite the provided pre-commit file  
 
 ## test suite
 to create a test follow this file naming format: `*.{spec,test}.{ts,tsx}`  
@@ -87,7 +89,7 @@ if you prefer CSS:
 ## environmental settings
 
 access environmental variables in code like so  
-```js
+```
 console.log(process.env.PORT)
 ```
 
