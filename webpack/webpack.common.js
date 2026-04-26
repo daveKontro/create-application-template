@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const packageJson = require('../package.json')
 const env = require('./utilities/env')
 const getPaths = require('./utilities/getPaths')
 const createEnvironmentHash = require('./utilities/createEnvironmentHash')
@@ -127,7 +128,11 @@ module.exports = (webpackEnv) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: paths.src.indexHtml,
-        favicon: paths.src.assets.faviconIco,
+        templateParameters: {
+          faviconVersion: isProduction
+            ? packageJson.version
+            : Date.now(),
+        },
         title: 'Create Application Template',
         ...(isProduction && {
           minify: {

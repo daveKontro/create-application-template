@@ -37,13 +37,16 @@ const run = async () => {
     get packageJson() { return path.resolve(this.root, 'package.json') },
     get subDirFiles() {
       const src = path.resolve(this.root, 'src')
+      const public = path.resolve(src, 'public')
       const assets = path.resolve(src, 'assets')
       const styles = path.resolve(src, 'styles')
       const components = path.resolve(src, 'components')
 
       const srcDirs = {
+        public: {
+          faviconIco: path.resolve(public, 'favicon.ico'),
+        },
         assets: {
-          faviconIco: path.resolve(assets, 'favicon.ico'),
           logoSvg: path.resolve(assets, 'logo.svg'),
         },
         components: {
@@ -110,7 +113,7 @@ const run = async () => {
 
     const { src, ccrate } = projectPaths.subDirFiles
 
-    execCommand(`cp ${ccrate.assets.faviconIco} ${src.assets.faviconIco}`)
+    execCommand(`cp ${ccrate.public.faviconIco} ${src.public.faviconIco}`)
     execCommand(`cp ${ccrate.assets.logoSvg} ${src.assets.logoSvg}`)
     execCommand(`cp ${ccrate.components.appSpecTsx} ${src.components.appSpecTsx}`)
     execCommand(`cp ${ccrate.components.appTsx} ${src.components.appTsx}`)
