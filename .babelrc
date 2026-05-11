@@ -16,7 +16,14 @@
         "regenerator": true
       }
     ],
-    "babel-plugin-react-compiler"
+    "babel-plugin-react-compiler",
+    [
+      "@emotion/babel-plugin",
+      {
+        "autoLabel": "dev-only",
+        "labelFormat": "[local]"
+      }
+    ]
   ],
   "env": {
     "development": {
