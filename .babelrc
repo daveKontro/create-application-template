@@ -17,7 +17,13 @@
       }
     ],
     "babel-plugin-react-compiler",
-    "babel-plugin-styled-components"
+    [
+      "@emotion/babel-plugin",
+      {
+        "autoLabel": "dev-only",
+        "labelFormat": "[local]"
+      }
+    ]
   ],
   "env": {
     "development": {

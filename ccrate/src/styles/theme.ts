@@ -1,19 +1,17 @@
 import { transparentize } from 'polished'
 
+const palette = {
+  background: '#182f37',
+  primary: '#e2b432',
+}
+
 const theme = {
   font: 'exo2',
   colors: {
-    palette: {
-      background: '#182f37',
-      primary: '#e2b432',
-    },
-    get link() {
-      const link = this.palette.primary
-
-      return {
-        regular: transparentize(0.4, link),
-        hover: transparentize(0.6, link),
-      }
+    palette,
+    link: {
+      main: transparentize(0.4, palette.primary),
+      hover: transparentize(0.6, palette.primary),
     },
   },
 }

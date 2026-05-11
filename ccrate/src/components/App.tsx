@@ -1,27 +1,27 @@
 import { FC } from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from '@emotion/react'
 import GlobalStyles from '../styles/Global'
 import theme from '../styles/theme'
 import * as app from '../styles/App.styled'
 import { StyledLogo } from '../styles/Logo.styled'
 import '../styles/env.css'
 import logo from '../assets/logo.svg'
-import { Counter } from './Counter'
-import { Typewriter } from './Typewriter'
+import Counter from './Counter'
+import Typewriter from './Typewriter'
 
-export const App: FC = () => {
-  const TemplateLink: FC = () => {
-    return (
-      <app.StyledLink
-        href='https://www.npmjs.com/package/create-containerized-app-template'
-        rel='noreferrer'
-        target='_blank'
-      >
-        here
-      </app.StyledLink>
-    )
-  }
+const TemplateLink: FC = () => {
+  return (
+    <app.StyledLink
+      href='https://www.npmjs.com/package/create-containerized-app-template'
+      rel='noopener noreferrer'
+      target='_blank'
+    >
+      here
+    </app.StyledLink>
+  )
+}
 
+const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -64,3 +64,5 @@ export const App: FC = () => {
     </ThemeProvider>
   )
 }
+
+export default App
