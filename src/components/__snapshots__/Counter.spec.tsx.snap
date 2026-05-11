@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`styled with palette colors 1`] = `
-.c0 {
+.emotion-0 {
   height: 40px;
   padding: 10px;
   font-size: 18px;
@@ -12,12 +12,12 @@ exports[`styled with palette colors 1`] = `
   transition-duration: 0.5s;
 }
 
-.c0:hover {
+.emotion-0:hover {
   border-radius: 20px;
 }
 
 <button
-  class="c0"
+  class="emotion-0 emotion-1"
 >
   count: 
   0

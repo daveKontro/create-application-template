@@ -47,10 +47,12 @@ npm run build
 ## tsconfig
 focused on type checking; babel is used for transpiling  
 
-## pre-commit
+## git hooks
 scripts in `.husky/pre-commit` are run on commits for quality control  
 
-add or remove scripts you'd like run before code is committed  
+run `npm prepare` to enable husky and use the provided pre-commit file  
+
+warning: running `npx husky init` will re-initiate husky and overwrite the provided pre-commit file  
 
 ## test suite
 to create a test follow this file naming format: `*.{spec,test}.{ts,tsx}`  
@@ -72,11 +74,11 @@ npm run stylelint
 ```
 
 ## styles
-styling is done using the style-components module, but straight CSS is supported
+styling is done using the emotion module, but straight CSS is supported
 
-after instillation it is recommended to proceed using styled-components or CSS, but not both
+after instillation it is recommended to proceed using emotion or CSS, but not both
 
-if you proceed with styled-components: 
+if you proceed with emotion: 
   - remove the single `.css` example in `/src/styles/`
   - that's it!
 
