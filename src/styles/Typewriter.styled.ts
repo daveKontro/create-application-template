@@ -1,5 +1,9 @@
 import styled from '@emotion/styled'
 
-export const StyledText = styled.div`
-  min-height: 1em;
+export const StyledText = styled.div<{
+  $minHeightRem: number,
+}>`
+  min-height: ${({ $minHeightRem }) => (
+    `${$minHeightRem}rem`
+  )};
 `
