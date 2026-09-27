@@ -1,10 +1,9 @@
 import { FC, useState } from 'react'
 import * as styledCount from '../styles/Counter.styled'
+import type { Count } from '../types'
 
 // NOTE update count then edit App.tsx... thanks
 // to ReactRefreshWebpackPlugin state is preserved
-
-type Count = number
 
 const Counter: FC = () => {
   const [count, setCount] = useState<Count>(0)
